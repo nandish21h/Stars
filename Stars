@@ -1,0 +1,768 @@
+class Stars
+{
+public static void main(String[]args)
+{
+  int n=7;
+// 1st line 
+for(int i=0;i<=n-1;i++)
+{
+    //Space
+  for(int k=0;k<=5;k++)
+  {
+      System.out.print(" ");
+  }
+//J letter
+  for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || j==n/2 || i-j==n/2)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+//A letter
+  System.out.print(" ");
+        for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+//V letter
+  System.out.print(" ");
+   for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i<=3) || (j==n-1 && i<=4-1) || (i-j==n/2 || i+j==n+n/2-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+//A letter
+    System.out.print(" ");
+        for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=4;k++)
+{
+System.out.print(" ");
+}
+// I letter
+        for(int j=0;j<=n-1;j++)
+  {
+     if(i==0||j==n/2||i==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// S letter
+  System.out.print(" ");
+  for(int j=0;j<=n-1;j++)
+  {
+     if((i==0 && j!=0)||(j==0 && i!=0 && i<n/2)||(i==n/2 && j!=0 && j!=n-1)||(j==n-1 && i>n/2 && i!=n-1)||(i==n-1 && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=4;k++)
+{
+System.out.print(" ");
+}
+// A letter
+  for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// M letter
+   System.out.print(" ");
+  for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || j==n-1 || (i==j && i+j<=n-1) || (i+j==n-1 && i<=n/2 && j>=n/2))  
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// A letter
+  System.out.print(" ");
+  for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Z letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || i==n-1 || i+j==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// I letter
+System.out.print(" ");
+        for(int j=0;j<=n-1;j++)
+  {
+     if(i==0||j==n/2||i==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// N letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || i==j || j==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// G letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 || i==0) || (j==n-1 && i!=n/2-1) || (i==n-1 && j<=n/2) || (j==n-1 && i!=n/2-1) || (i==n/2 && j>=n/2) || (j==n/2 && i>=n/2) )
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+  System.out.println();
+
+}
+// Line Spacing
+for(int k=0;k<=2;k++)
+{
+System.out.println();
+}
+// 2nd Line
+for(int i=0;i<=n-1;i++)
+{
+// Same Line Space
+for(int k=0;k<=15;k++)
+{
+System.out.print(" ");
+}
+// P letter
+  for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 || ((i==0||i==n/2)&&j!=n-1)||(j==n-1&&(i!=0)&&i<n/2)))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// R letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+               if((j==0 ||((i==0||i==n/1+1)&&j!=n-1)||(j==n-1&&(i!=0)&&i<n/2)||(i!=n/2 && i==j && j!=i*i && j!=2))||j==5&&i==n/2)
+               {
+                    System.out.print("*");
+               }
+               else
+               {
+                  System.out.print(" ");
+                }
+     }
+// O letter
+System.out.print(" ");
+ for(int j=0;j<=n-1;j++)
+  {
+     if((i==0 && j!=0 && j!=n-1)||(i==n-1 && j!=0 && j!=n-1)||(j==0||j==n-1)&&(i!=0 && i!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// U letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((i==n-1 && j!=0 && j!=n-1)|| (j==0||j==n-1)&&(i!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// D letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 || ( i==0 || i==n-1) && (j!=n-1)||(j==n-1 && i!=0 && i!=n-1)))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=4;k++)
+{
+System.out.print(" ");
+}
+// G letter
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 || i==0) || (j==n-1 && i!=n/2-1) || (i==n-1 && j<=n/2) || (j==n-1 && i!=n/2-1) || (i==n/2 && j>=n/2) || (j==n/2 && i>=n/2) )
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Q letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 || j==n/2+1)&&(i!=0 && i<=n/2)||(i==0||i==n/2+1)&&(j!=0&&j<=n/2)||(i==j&&i>=n/2&&j>=n/2))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// T letter
+for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || j==n/2)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// I letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || j==n/2 || i==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// A letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// N letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || i==j || j==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+System.out.println();
+}
+// Line Spacing
+for(int k=0;k<=2;k++)
+{
+System.out.println();
+}
+// Next line
+for(int i=0;i<=n-1;i++)
+{
+    // Space
+    for(int k=0;k<=6;k++)
+    {
+     System.out.print(" ");   
+    }
+// T letter
+  for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || j==n/2)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// H letter
+System.out.print(" ");
+  for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || j==n-1 || i==n/2)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// A letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// N letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || i==j || j==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// K letter
+System.out.print(" ");
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || i-j==n/2 || i+j==n/2) 
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=5;k++);
+{
+System.out.print(" ");
+} 
+// Y letter
+for(int j=0;j<=n-1;j++)
+  {
+     if(i+j==n-1||(i==j && j<=n/2))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// O letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((i==0 && j!=0 && j!=n-1)||(i==n-1 && j!=0 && j!=n-1)||(j==0||j==n-1)&&(i!=0 && i!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// U letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((i==n-1 && j!=0 && j!=n-1)|| (j==0||j==n-1)&&(i!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=4;k++)
+{
+System.out.print(" ");
+}
+// G letter
+ for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 || i==0) || (j==n-1 && i!=n/2-1) || (i==n-1 && j<=n/2) || (j==n-1 && i!=n/2-1) || (i==n/2 && j>=n/2) || (j==n/2 && i>=n/2) )
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// R letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0||i-j==n/2)||(i==0 && j!=n/2 && j<=n/2)||(i==n/2&&j!=n/2&&j<=n/2)||(j==n/2 && i!=0 && i<n/2))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=4;k++)
+{
+System.out.print(" ");
+}
+// S letter
+for(int j=0;j<=n-1;j++)
+  {
+     if((i==0 && j!=0)||(j==0 && i!=0 && i<n/2)||(i==n/2 && j!=0 && j!=n-1)||(j==n-1 && i>n/2 && i!=n-1)||(i==n-1 && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// I letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(i==0||j==n/2||i==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// R letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0||i-j==n/2)||(i==0 && j!=n/2 && j<=n/2)||(i==n/2&&j!=n/2&&j<=n/2)||(j==n/2 && i!=0 && i<n/2))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+  System.out.println();
+}
+// Line Spacing
+for(int k=0;k<=2;k++)
+{
+System.out.println();
+}
+// Next line
+for(int i=0;i<=n-1;i++)
+{
+// T letter
+  for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || j==n/2)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// H letter
+System.out.print(" ");
+  for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || j==n-1 || i==n/2)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// A letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// N letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || i==j || j==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// K letter
+System.out.print(" ");
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || i-j==n/2 || i+j==n/2) 
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=5;k++);
+{
+System.out.print(" ");
+} 
+// Y letter
+for(int j=0;j<=n-1;j++)
+  {
+     if(i+j==n-1||(i==j && j<=n/2))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// O letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((i==0 && j!=0 && j!=n-1)||(i==n-1 && j!=0 && j!=n-1)||(j==0||j==n-1)&&(i!=0 && i!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// U letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((i==n-1 && j!=0 && j!=n-1)|| (j==0||j==n-1)&&(i!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// Space
+for(int k=0;k<=2;k++)
+{
+System.out.print(" ");
+}
+// Z letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || i==n-1 || i+j==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+  // A letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0 && i!=0)||(j==n-1 && i!=0)||i==n/2||(i==0 && j!=0  && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+  // B letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(j==0 || ((i==0 || i==n/2 || i==n-1)&&(j!=n-1))||(j==n-1 && i!=0 && i!=n/2 && i!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+  // I letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(i==0 || j==n/2 || i==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+  // Space
+for(int k=0;k<=2;k++)
+{
+System.out.print(" ");
+}
+// S letter
+for(int j=0;j<=n-1;j++)
+  {
+     if((i==0 && j!=0)||(j==0 && i!=0 && i<n/2)||(i==n/2 && j!=0 && j!=n-1)||(j==n-1 && i>n/2 && i!=n-1)||(i==n-1 && j!=n-1))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// I letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if(i==0||j==n/2||i==n-1)
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+// R letter
+System.out.print(" ");
+for(int j=0;j<=n-1;j++)
+  {
+     if((j==0||i-j==n/2)||(i==0 && j!=n/2 && j<=n/2)||(i==n/2&&j!=n/2&&j<=n/2)||(j==n/2 && i!=0 && i<n/2))
+  {
+   System.out.print("*");
+  }
+     else
+    {
+     System.out.print(" ");
+    }
+  }
+    System.out.println();
+}
+}
+}
